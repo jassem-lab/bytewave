@@ -1,0 +1,69 @@
+
+<div id="content">
+      <div class="breadcrum-heading bg-breadcrum">
+        <div class="container"> 
+          <div class="flex-item-center pt-8 pb-8"><a class="fw-500 text-on-surface-variant2" href="index.html">Home </a><i class="ph-fill ph-dot-outline text-on-surface-variant2 pl-12"></i>
+            <div class="fw-500 pl-12">Login </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-login-block pt-80 pb-80">
+        <div class="container"> 
+          <div class="row flex-center"> 
+            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10">
+              <div class="heading3 text-center">Log In</div>
+              <div class="demo-account bg-surface bora-8 p-16 mt-32">
+              <?php if (isset($_GET['error']) && $_GET['error'] == 1) { ?>
+            <div class="alert alert-custom alert-indicator-bottom indicator-danger" role="alert">
+                <div class="alert-content">
+                    
+                    <span class="alert-text">Invalid username or password</span>
+                </div>
+            </div>
+            <?php } ?>
+              </div>
+              <div class="form mt-24">
+                <form action="validate.php" method="POST">
+                  <div class="email pb-24">
+                    <label>Email address</label>
+                    <input class="mt-12 border-outline pl-16 pr-16 pt-12 pb-12 w-100 bora-4" type="text" placeholder="Email Adress" name="email"/>
+                  </div>
+                  <div class="pass pb-24">
+                    <label>Password </label>
+                    <input class="mt-12 border-outline pl-16 pr-16 pt-12 pb-12 w-100 bora-4" type="password" placeholder="Password" name="password"/>
+                  </div>
+                </form>
+                <div class="content-sub-input flex-between pb-24">
+                  <div class="sub-input-checkbox">
+                    <input type="checkbox"/><span class="text-on-surface-variant1 pl-8">Remember me</span>
+                  </div><a class="text-blue hover-underline" href="#">Forgot password?</a>
+                </div>
+                 <div class="block-button mt-24"> <a class="button-blue button-blue-hover w-100" href="index.html">Login</a></div>
+                <div class="text-on-surface-variant1 text-center"> <span class="pl-20 pr-20 bg-white">or sign up with</span></div>
+                <div class="list-login mt-24"> <a class="bg-surface pt-12 pb-12 flex-center gap-12 bora-4" href="#!"><i class="icon-facebook text-blue fs-24"></i>
+                    <div class="text-button">Continue with Facebook</div></a><a class="bg-surface pt-12 pb-12 flex-center gap-12 bora-4 mt-12" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewbox="0 0 25 24" fill="none">
+                      <g clip-path="url(#clip0_7676_2285)">
+                        <path d="M24.2643 12.2763C24.2643 11.4605 24.1982 10.6404 24.0571 9.83789H12.7383V14.4589H19.22C18.951 15.9492 18.0868 17.2676 16.8213 18.1054V21.1037H20.6883C22.9591 19.0137 24.2643 15.9272 24.2643 12.2763Z" fill="#2D4FE1"></path>
+                        <path d="M12.7391 24.0013C15.9756 24.0013 18.705 22.9387 20.6936 21.1044L16.8266 18.106C15.7507 18.838 14.3618 19.2525 12.7435 19.2525C9.61291 19.2525 6.95849 17.1404 6.00607 14.3008H2.01562V17.3917C4.05274 21.4439 8.20192 24.0013 12.7391 24.0013Z" fill="#34A853"></path>
+                        <path d="M6.00082 14.3007C5.49816 12.8103 5.49816 11.1965 6.00082 9.70618V6.61523H2.01478C0.312781 10.006 0.312781 14.0009 2.01478 17.3916L6.00082 14.3007Z" fill="#FBBC04"></path>
+                        <path d="M12.7391 4.74966C14.4499 4.7232 16.1034 5.36697 17.3425 6.54867L20.7685 3.12262C18.5991 1.0855 15.7198 -0.034466 12.7391 0.000808666C8.20192 0.000808666 4.05274 2.55822 2.01562 6.61481L6.00166 9.70575C6.94967 6.86173 9.6085 4.74966 12.7391 4.74966Z" fill="#EA4335"></path>
+                      </g>
+                      <defs>
+                        <clippath id="clip0_7676_2285">
+                          <rect width="24" height="24" fill="white" transform="translate(0.5)"></rect>
+                        </clippath>
+                      </defs>
+                    </svg>
+                    <div class="text-button">Continue with Google</div></a><a class="bg-surface pt-12 pb-12 flex-center gap-12 bora-4 mt-12" href="#!"><i class="icon-twitter text-info fs-24"></i>
+                    <div class="text-button">Continue with Twitter</div></a></div>
+               
+                <div class="navigate flex-center mt-24"> 
+                  <div class="text-on-surface-variant1">Not registered yet?</div><a class="text-button pl-8 hover-underline" href="register.html">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
